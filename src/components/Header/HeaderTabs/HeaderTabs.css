@@ -1,0 +1,21 @@
+.headerTabs {
+  height: 130px;
+  width: 100%;
+}
+.headerTabs__container {
+  display: flex;
+  height: 110px;
+
+  width: 1400px;
+  justify-content: space-between;
+  text-align: center;
+}
+.selected {
+  background-color: #00635b;
+  color: white;
+  width: 280px;
+}
+.headerTabs__subContainer {
+  width: 270px;
+  color: #00635b;
+}
