@@ -1,8 +1,11 @@
 import React from 'react'
-
+import MainSidebar from './MainSideBar/MainSidebar'
+import './Main.css'
 const Main = () => {
     return (
-        <div><h1>Main</h1></div>
+        <div className='main'>
+            <MainSidebar />
+        </div>
     )
 }
 
