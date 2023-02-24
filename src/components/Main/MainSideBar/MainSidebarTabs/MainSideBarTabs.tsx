@@ -4,6 +4,7 @@ import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import Divider from '@mui/material/Divider';
+import SearchBar from '../MainSidebarSearch/MainSidebarSearch';
 
 interface TabPanelProps {
     children?: React.ReactNode;
@@ -58,11 +59,14 @@ function BasicTabs() {
                 <Tab sx={{ fontSize: '12px', color: '#A5A5A5', marginRight: '20px' }} label="QUALIFIED" {...a11yProps(0)} />
                 <Tab sx={{ fontSize: '12px', color: '#A5A5A5' }} label="DISQUALIFIED" {...a11yProps(1)} />
             </Tabs>
-            <Divider sx={{ width: '230px', marginLeft: '35px' }} />
+            <Divider sx={{ width: '260px', marginLeft: '45px' }} />
             <TabPanel value={value} index={0}>
+                <SearchBar />
                 Item One
             </TabPanel>
             <TabPanel value={value} index={1}>
+            <SearchBar />
+
                 Item Two
             </TabPanel>
             <TabPanel value={value} index={2}>
